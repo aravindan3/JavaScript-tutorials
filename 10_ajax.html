@@ -1,0 +1,33 @@
+
+<html lang="en">
+<head>
+    <meta name="viewport" content="device-width",intial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"content="ie=edge">
+    <title>Aravindan</title>
+</head>
+<body>
+    <button onclick="loaddata()">Get Text File</button>
+    <div id="mes">
+    This is Mes Div Box
+    </div>
+    <script>
+        function loaddata()
+        {
+            var a=new XMLHttpRequest();
+            a.onreadystatechange=function()
+            {
+                if(this.readyState==4 && this.status==200)
+                {
+                    document.getElementById("mes").innerHTML=this.responseText;
+                } 
+            };
+            a.open("GET","aravind.txt",true);
+            a.send();           
+        }
+    </script>
+    
+    
+
+
+</body>   
+</html>

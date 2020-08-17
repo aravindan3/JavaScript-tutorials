@@ -1,0 +1,24 @@
+<!DOCTYPE html>>
+<html lang="en">
+<head>
+    <title>Aravindan</title>
+</head>
+<body>
+    <img src="off.png" height="250px" width="150px">
+    <script>
+        var img=document.querySelector('img');
+        img.onclick=function()
+        {
+            var src=img.getAttribute("src")    
+            if(src==="off.png")
+            {
+                img.setAttribute("src","on.png");
+            }    
+            else
+            {
+                img.setAttribute("src","off.png");
+            }    
+        }
+    </script>
+</body>
+</html>

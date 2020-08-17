@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Aravindan</title>
+</head>
+<body>
+    <h1 class="abc">Welcome Aravindan</h1>
+    <h1 class="two">Welcome Aravindan</h1>
+    <h1 class="two">Welcome Aravindan</h1>
+    <h1 class="abc">Welcome Aravindan</h1>
+    <button>click me</button>
+    <script>
+        var btn=document.querySelector("button");
+        btn.onclick=function()
+        {
+            var x=document.querySelectorAll(".abc");
+             x[0].style.backgroundColor="red";
+             x[1].style.backgroundColor="red";
+        }
+    </script>
+
+
+</body>   
+</html>
